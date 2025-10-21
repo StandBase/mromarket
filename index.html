@@ -1,0 +1,288 @@
+<!doctype html>
+
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Технические работы — @mromarket_bot</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      height: 100vh;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      background: radial-gradient(circle at top, #1a1425, #0b0913);
+
+      font-family: 'Inter', sans-serif;
+
+      color: white;
+
+    }
+
+
+
+    .card {
+
+      width: 90%;
+
+      max-width: 400px;
+
+      background: rgba(255, 255, 255, 0.05);
+
+      border: 1px solid rgba(255, 255, 255, 0.06);
+
+      border-radius: 24px;
+
+      padding: 36px 28px;
+
+      text-align: center;
+
+      box-shadow: 0 0 60px rgba(255, 140, 0, 0.15);
+
+      backdrop-filter: blur(12px);
+
+      animation: fadeIn 1.4s ease;
+
+      transition: all 0.3s ease;
+
+    }
+
+
+
+    .card:hover {
+
+      transform: translateY(-3px);
+
+      box-shadow: 0 0 80px rgba(255, 160, 0, 0.2);
+
+    }
+
+
+
+    .icon {
+
+      width: 84px;
+
+      height: 84px;
+
+      border-radius: 50%;
+
+      background: radial-gradient(circle at top left, #ffb347, #ff6a00);
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin: 0 auto 18px;
+
+      box-shadow: 0 0 40px rgba(255, 128, 0, 0.35);
+
+      animation: pulse 2.8s infinite ease-in-out;
+
+    }
+
+
+
+    .icon svg {
+
+      width: 42px;
+
+      height: 42px;
+
+      opacity: 0.9;
+
+      fill: white;
+
+    }
+
+
+
+    h1 {
+
+      font-size: 24px;
+
+      margin: 10px 0 10px;
+
+      font-weight: 700;
+
+      letter-spacing: 0.3px;
+
+    }
+
+
+
+    p {
+
+      color: #cfd2da;
+
+      font-size: 15px;
+
+      margin-bottom: 24px;
+
+      line-height: 1.5;
+
+    }
+
+
+
+    .status {
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 18px;
+
+      font-size: 14px;
+
+      color: #ffb86c;
+
+      margin-bottom: 28px;
+
+    }
+
+
+
+    .status span {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 6px;
+
+    }
+
+
+
+    .btn {
+
+      display: inline-block;
+
+      background: linear-gradient(90deg, #ffb347, #ff6a00);
+
+      color: white;
+
+      font-weight: 600;
+
+      text-decoration: none;
+
+      border-radius: 12px;
+
+      padding: 13px 32px;
+
+      box-shadow: 0 4px 25px rgba(255, 120, 0, 0.3);
+
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    }
+
+
+
+    .btn:hover {
+
+      transform: translateY(-3px);
+
+      box-shadow: 0 8px 30px rgba(255, 120, 0, 0.45);
+
+    }
+
+
+
+    footer {
+
+      margin-top: 22px;
+
+      color: #c9c9c9;
+
+      font-size: 14px;
+
+      opacity: 0.8;
+
+    }
+
+
+
+    @keyframes fadeIn {
+
+      from { opacity: 0; transform: scale(0.95); }
+
+      to { opacity: 1; transform: scale(1); }
+
+    }
+
+
+
+    @keyframes pulse {
+
+      0%, 100% { transform: scale(1); box-shadow: 0 0 40px rgba(255, 128, 0, 0.3); }
+
+      50% { transform: scale(1.05); box-shadow: 0 0 60px rgba(255, 160, 0, 0.4); }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="icon">
+
+      <!-- SVG иконка дорожных работ -->
+
+      <svg viewBox="0 0 24 24">
+
+        <path d="M2 19h20v2H2v-2zm18-8v6H4v-6h16zM6 13h12v-2H6v2zM9 3h6v3H9V3zm2 6h2v2h-2V9z"/>
+
+      </svg>
+
+    </div>
+
+
+
+    <h1>Технические работы</h1>
+
+    <p>Идут технические работы.<br>Скоро вернёмся!</p>
+
+
+
+    <div class="status">
+
+      <span>⏳ Ожидайте</span>
+
+      <span>🔧 Обновление</span>
+
+    </div>
+
+
+
+    <a href="https://t.me/mromarket" target="_blank" class="btn">Перейти в канал</a>
+
+    <footer>Спасибо за ваше терпение ❤️</footer>
+
+  </div>
+
+</body>
+
+</html>
+
