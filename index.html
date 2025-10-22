@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Всё работает — @mromarket_bot</title>
+  <title>Технические работы — @mromarket_bot</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -56,9 +56,19 @@
 
       backdrop-filter: blur(12px);
 
-      animation: fadeIn 1.2s ease;
+      animation: fadeIn 1.4s ease;
 
       transition: all 0.3s ease;
+
+    }
+
+
+
+    .card:hover {
+
+      transform: translateY(-3px);
+
+      box-shadow: 0 0 80px rgba(255, 160, 0, 0.2);
 
     }
 
@@ -72,7 +82,7 @@
 
       border-radius: 50%;
 
-      background: linear-gradient(145deg, #ffb347, #ff6a00);
+      background: radial-gradient(circle at top left, #ffb347, #ff6a00);
 
       display: flex;
 
@@ -96,9 +106,9 @@
 
       height: 42px;
 
-      fill: white;
+      opacity: 0.9;
 
-      opacity: 0.95;
+      fill: white;
 
     }
 
@@ -108,11 +118,11 @@
 
       font-size: 24px;
 
-      margin: 10px 0 8px;
+      margin: 10px 0 10px;
 
       font-weight: 700;
 
-      color: #fff;
+      letter-spacing: 0.3px;
 
     }
 
@@ -124,9 +134,39 @@
 
       font-size: 15px;
 
-      margin-bottom: 26px;
+      margin-bottom: 24px;
 
       line-height: 1.5;
+
+    }
+
+
+
+    .status {
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 18px;
+
+      font-size: 14px;
+
+      color: #ffb86c;
+
+      margin-bottom: 28px;
+
+    }
+
+
+
+    .status span {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 6px;
 
     }
 
@@ -146,7 +186,7 @@
 
       border-radius: 12px;
 
-      padding: 13px 38px;
+      padding: 13px 32px;
 
       box-shadow: 0 4px 25px rgba(255, 120, 0, 0.3);
 
@@ -174,7 +214,7 @@
 
       font-size: 14px;
 
-      opacity: 0.85;
+      opacity: 0.8;
 
     }
 
@@ -208,11 +248,11 @@
 
     <div class="icon">
 
-      <!-- SVG иконка галочки -->
+      <!-- SVG иконка дорожных работ -->
 
       <svg viewBox="0 0 24 24">
 
-        <path d="M9 16.2l-3.5-3.5L4 14.2l5 5 12-12-1.4-1.4z"/>
+        <path d="M2 19h20v2H2v-2zm18-8v6H4v-6h16zM6 13h12v-2H6v2zM9 3h6v3H9V3zm2 6h2v2h-2V9z"/>
 
       </svg>
 
@@ -220,17 +260,25 @@
 
 
 
-    <h1>Всё работает!</h1>
+    <h1>Технические работы</h1>
 
-    <p>Система снова онлайн 🎉<br>Просто нажмите «Старт», чтобы продолжить.</p>
-
-
-
-    <a href="https://t.me/mromarket_bot?start=1" class="btn">Запустить бота</a>
+    <p>Идут технические работы.<br>Скоро вернёмся!</p>
 
 
 
-    <footer>@mromarket_bot</footer>
+    <div class="status">
+
+      <span>⏳ Ожидайте</span>
+
+      <span>🔧 Обновление</span>
+
+    </div>
+
+
+
+    <a href="https://t.me/mromarket" target="_blank" class="btn">Перейти в канал</a>
+
+    <footer>Спасибо за ваше терпение ❤️</footer>
 
   </div>
 
