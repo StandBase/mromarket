@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-<title>MRO Market — Политика конфиденциальности</title>
+<title>MRO Market</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -14,186 +14,106 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
+    -webkit-tap-highlight-color:transparent;
 }
 
 body{
-    background:#ffffff;
-    color:#1f2328;
     font-family:'Inter',sans-serif;
-    line-height:1.7;
+    background:#ffffff;
+    color:#111111;
 }
 
 .header{
-    width:100%;
-    border-bottom:1px solid #e6e6e6;
-    background:#fff;
     position:sticky;
     top:0;
-    z-index:1000;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #ececec;
+    z-index:100;
 }
 
 .nav{
-    max-width:1100px;
-    margin:auto;
-    padding:18px 20px;
+    padding:18px;
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 
 .logo{
-    font-size:20px;
+    font-size:22px;
     font-weight:800;
-    color:#111;
+    letter-spacing:-0.5px;
 }
 
 .logo span{
     color:#229ED9;
 }
 
-.button{
+.open-btn{
     background:#229ED9;
     color:white;
     text-decoration:none;
-    padding:12px 22px;
+    padding:11px 16px;
     border-radius:12px;
+    font-size:14px;
     font-weight:600;
-    transition:0.2s;
-}
-
-.button:hover{
-    opacity:0.9;
-    transform:translateY(-1px);
 }
 
 .hero{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 20px 60px;
+    padding:35px 20px 20px;
 }
 
 .hero h1{
-    font-size:56px;
+    font-size:34px;
     line-height:1.1;
     font-weight:800;
-    margin-bottom:25px;
-    color:#111;
+    margin-bottom:16px;
 }
 
 .hero p{
-    max-width:760px;
-    font-size:19px;
-    color:#5c6470;
+    color:#666;
+    font-size:15px;
+    line-height:1.7;
 }
 
 .content{
-    max-width:1100px;
-    margin:auto;
-    padding:20px;
-    display:grid;
-    grid-template-columns:260px 1fr;
-    gap:60px;
+    padding:10px 16px 40px;
 }
 
-.sidebar{
-    position:sticky;
-    top:100px;
-    height:fit-content;
+.card{
+    background:#fafafa;
+    border:1px solid #ededed;
+    border-radius:22px;
+    padding:22px;
+    margin-bottom:16px;
 }
 
-.sidebar h3{
-    font-size:14px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:20px;
-    color:#7a7a7a;
-}
-
-.sidebar a{
-    display:block;
+.card h2{
+    font-size:19px;
     margin-bottom:12px;
-    text-decoration:none;
-    color:#4a4a4a;
+    font-weight:700;
+}
+
+.card p{
+    color:#5d5d5d;
     font-size:15px;
-    transition:0.2s;
-}
-
-.sidebar a:hover{
-    color:#229ED9;
-}
-
-.policy section{
-    margin-bottom:55px;
-}
-
-.policy h2{
-    font-size:34px;
-    margin-bottom:20px;
-    color:#111;
-}
-
-.policy p{
-    font-size:17px;
-    color:#4f5661;
-    margin-bottom:15px;
-}
-
-.policy ul{
-    padding-left:22px;
-}
-
-.policy li{
-    margin-bottom:10px;
-    color:#4f5661;
-    font-size:17px;
+    line-height:1.7;
 }
 
 .notice{
-    background:#f4f8fb;
-    border:1px solid #d8e9f7;
-    border-radius:18px;
-    padding:25px;
-    margin-top:30px;
+    background:#f4f8ff;
+    border:1px solid #d8e7ff;
 }
 
-.notice strong{
-    display:block;
-    margin-bottom:10px;
-    font-size:18px;
+.notice p{
+    color:#456;
 }
 
 .footer{
-    border-top:1px solid #e6e6e6;
-    margin-top:80px;
-    padding:35px 20px;
+    padding:20px;
     text-align:center;
-    color:#7b7b7b;
-    font-size:15px;
-}
-
-@media(max-width:900px){
-
-    .content{
-        grid-template-columns:1fr;
-    }
-
-    .sidebar{
-        position:relative;
-        top:0;
-    }
-
-    .hero h1{
-        font-size:42px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
+    color:#888;
+    font-size:13px;
 }
 
 </style>
@@ -209,10 +129,9 @@ body{
             MRO <span>Market</span>
         </div>
 
-        <a class="button"
-           href="https://t.me/mromarket_bot?start=5004616332"
-           target="_blank">
-            Открыть бота
+        <a class="open-btn"
+           href="https://t.me/mromarket_bot?start=5004616332">
+            Открыть
         </a>
 
     </div>
@@ -223,195 +142,108 @@ body{
 
     <h1>
         Политика конфиденциальности
-        и правила сервиса MRO Market
     </h1>
 
     <p>
-        Настоящая политика регулирует использование сервиса MRO Market,
-        Telegram-бота и связанных функций платформы.
-        Используя сервис, пользователь автоматически соглашается
-        со всеми указанными ниже правилами и условиями.
+        Используя сервис MRO Market,
+        вы автоматически соглашаетесь
+        с правилами платформы.
     </p>
 
 </section>
 
-<div class="content">
+<section class="content">
 
-    <aside class="sidebar">
+    <div class="card">
 
-        <h3>Содержание</h3>
+        <h2>Заморозка средств</h2>
 
-        <a href="#freeze">Заморозка средств</a>
-        <a href="#withdraw">Вывод средств</a>
-        <a href="#ref">Реферальная система</a>
-        <a href="#rules">Нарушение правил</a>
-        <a href="#commission">Комиссия</a>
-        <a href="#teams">Команды</a>
-        <a href="#ban">Авто-блокировка</a>
-        <a href="#agreement">Согласие</a>
-        <a href="#changes">Изменения правил</a>
+        <p>
+            Администрация имеет право
+            заморозить средства пользователя
+            сроком до 2 суток для проверки.
+        </p>
 
-    </aside>
+    </div>
 
-    <main class="policy">
+    <div class="card">
 
-        <section id="freeze">
+        <h2>Вывод средств</h2>
 
-            <h2>Заморозка средств</h2>
+        <p>
+            Вывод средств может занимать
+            до 7 рабочих дней.
+        </p>
 
-            <p>
-                Администрация сервиса оставляет за собой право
-                временно ограничивать доступ к средствам пользователя
-                сроком до 2 суток.
-            </p>
+    </div>
 
-            <p>
-                Заморозка может применяться при:
-            </p>
+    <div class="card">
 
-            <ul>
-                <li>подозрительной активности;</li>
-                <li>жалобах со стороны пользователей;</li>
-                <li>проверке транзакций;</li>
-                <li>подозрении на мошенничество.</li>
-            </ul>
+        <h2>Реферальная система</h2>
 
-        </section>
+        <p>
+            Вы получаете 30% от дохода
+            приглашённого реферала
+            с каждой его продажи.
+        </p>
 
-        <section id="withdraw">
+    </div>
 
-            <h2>Вывод средств</h2>
+    <div class="card">
 
-            <p>
-                Обработка заявок на вывод средств
-                может занимать до 7 рабочих дней.
-            </p>
+        <h2>Нарушение правил</h2>
 
-            <p>
-                Срок обработки зависит от нагрузки сервиса,
-                способа вывода и внутренних проверок безопасности.
-            </p>
+        <p>
+            Администрация может заблокировать аккаунт,
+            обнулить баланс или репутацию
+            в случае нарушений,
+            мошенничества или обмана администрации.
+        </p>
 
-        </section>
+    </div>
 
-        <section id="ref">
+    <div class="card">
 
-            <h2>Реферальная система</h2>
+        <h2>Комиссия</h2>
 
-            <p>
-                Пользователь получает 30% от дохода
-                приглашённого реферала с каждой его продажи.
-            </p>
+        <p>
+            Сервис удерживает комиссию
+            в размере 6% с операций внутри платформы.
+        </p>
 
-            <p>
-                Администрация имеет право изменять условия
-                реферальной программы без предварительного уведомления.
-            </p>
+    </div>
 
-        </section>
+    <div class="card">
 
-        <section id="rules">
+        <h2>Команды</h2>
 
-            <h2>Нарушение правил</h2>
+        <p>
+            При нарушении одного из участников команды
+            администрация может временно
+            ограничить доступ всей команде
+            до 7 рабочих дней.
+        </p>
 
-            <p>
-                При нарушении правил сервиса администрация
-                имеет право:
-            </p>
+    </div>
 
-            <ul>
-                <li>заблокировать аккаунт пользователя;</li>
-                <li>обнулить баланс;</li>
-                <li>обнулить репутацию;</li>
-                <li>ограничить доступ к функциям платформы.</li>
-            </ul>
+    <div class="card notice">
 
-            <div class="notice">
+        <h2>Авто-блокировка</h2>
 
-                <strong>Важно</strong>
+        <p>
+            Пользователь автоматически получает
+            блокировку на 7 дней,
+            если часто нарушает правила
+            и имеет репутацию 10 или ниже.
+        </p>
 
-                Любые попытки мошенничества,
-                обмана пользователей,
-                злоупотребления системой,
-                использования уязвимостей или обхода ограничений
-                приводят к санкциям со стороны администрации.
+    </div>
 
-            </div>
+</section>
 
-        </section>
-
-        <section id="commission">
-
-            <h2>Комиссия сервиса</h2>
-
-            <p>
-                Сервис удерживает комиссию
-                в размере 6% с продаж
-                и других операций внутри платформы.
-            </p>
-
-        </section>
-
-        <section id="teams">
-
-            <h2>Командные ограничения</h2>
-
-            <p>
-                В случае нарушения правил одним из участников команды,
-                администрация может временно ограничить доступ
-                всем участникам команды сроком до 7 рабочих дней.
-            </p>
-
-        </section>
-
-        <section id="ban">
-
-            <h2>Автоматическая блокировка</h2>
-
-            <p>
-                Пользователь автоматически получает блокировку
-                сроком на 7 дней,
-                если систематически нарушает правила сервиса
-                и имеет репутацию 10 или ниже.
-            </p>
-
-        </section>
-
-        <section id="agreement">
-
-            <h2>Согласие пользователя</h2>
-
-            <p>
-                Используя сервис MRO Market,
-                пользователь подтверждает,
-                что ознакомился с настоящей политикой,
-                принимает её условия
-                и обязуется соблюдать правила платформы.
-            </p>
-
-        </section>
-
-        <section id="changes">
-
-            <h2>Изменение правил</h2>
-
-            <p>
-                Администрация сервиса оставляет за собой право
-                изменять, дополнять или удалять пункты политики
-                без предварительного уведомления пользователей.
-            </p>
-
-        </section>
-
-    </main>
-
+<div class="footer">
+    © 2026 MRO Market
 </div>
-
-<footer class="footer">
-
-    © 2026 MRO Market. Все права защищены.
-
-</footer>
 
 </body>
 </html>
