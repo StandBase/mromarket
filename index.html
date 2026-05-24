@@ -1,240 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MR O Market — Примерные цены</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <meta name="theme-color" content="#0b0913">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MRO Market — Политика конфиденциальности</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 30px 16px;
-      background:
-        radial-gradient(circle at top, #1b1328 0%, #0b0913 70%);
-      font-family: 'Inter', sans-serif;
+      padding: 0;
+      background: #0f0f0f;
       color: white;
+      font-family: Arial, sans-serif;
     }
 
-    .card {
-      width: 100%;
-      max-width: 520px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 28px;
-      padding: 34px 28px;
-      backdrop-filter: blur(14px);
-      box-shadow:
-        0 0 60px rgba(255,140,0,0.12),
-        0 10px 40px rgba(0,0,0,0.35);
-      animation: fadeIn 1s ease;
-    }
-
-    .logo {
-      width: 84px;
-      height: 84px;
-      margin: 0 auto 18px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(145deg, #ffb347, #ff6a00);
-      box-shadow: 0 0 40px rgba(255,140,0,0.35);
-      animation: pulse 3s infinite ease-in-out;
-    }
-
-    .logo svg {
-      width: 40px;
-      height: 40px;
-      fill: white;
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #181818;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
     h1 {
-      margin: 0;
       text-align: center;
-      font-size: 28px;
-      font-weight: 700;
-    }
-
-    .subtitle {
-      margin-top: 10px;
-      text-align: center;
-      color: #cfd2da;
-      font-size: 15px;
-      line-height: 1.5;
+      color: #00ff88;
       margin-bottom: 30px;
     }
 
-    .prices {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
+    h2 {
+      color: #00ccff;
+      margin-top: 30px;
     }
 
-    .item {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 18px;
-      padding: 16px 18px;
-      transition: 0.25s ease;
+    p, li {
+      color: #dcdcdc;
+      line-height: 1.7;
+      font-size: 16px;
     }
 
-    .item:hover {
-      transform: translateY(-3px);
-      background: rgba(255,255,255,0.06);
-      border-color: rgba(255,140,0,0.3);
+    ul {
+      padding-left: 20px;
     }
 
-    .game {
-      font-size: 17px;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: #fff;
-    }
-
-    .desc {
-      color: #cfd2da;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-
-    .price {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 10px;
-      background: linear-gradient(90deg, #ffb347, #ff6a00);
-      font-size: 14px;
-      font-weight: 700;
-      color: white;
-      box-shadow: 0 4px 18px rgba(255,120,0,0.25);
-    }
-
-    .btn {
-      margin-top: 28px;
-      display: block;
+    .footer {
       text-align: center;
+      margin-top: 40px;
+      color: #888;
+      font-size: 14px;
+    }
+
+    .telegram {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .telegram a {
+      color: #00ff88;
       text-decoration: none;
-      color: white;
-      font-weight: 700;
-      padding: 15px;
-      border-radius: 14px;
-      background: linear-gradient(90deg, #ffb347, #ff6a00);
-      box-shadow: 0 4px 25px rgba(255,120,0,0.3);
-      transition: 0.25s ease;
+      font-size: 18px;
+      font-weight: bold;
     }
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 35px rgba(255,120,0,0.45);
-    }
-
-    .btn:active {
-      transform: scale(0.98);
-    }
-
-    footer {
-      margin-top: 22px;
-      text-align: center;
-      color: #bdbdbd;
-      font-size: 14px;
-      opacity: 0.85;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.96);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05);
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        animation: none !important;
-        transition: none !important;
-      }
+    .telegram a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="card">
+  <div class="container">
 
-    <div class="logo">
-      <svg viewBox="0 0 24 24">
-        <path d="M12 2L2 7v6c0 5.5 3.8 10.7 10 12 6.2-1.3 10-6.5 10-12V7L12 2z"/>
-      </svg>
+    <h1>Политика конфиденциальности MRO Market</h1>
+
+    <p>
+      Используя Telegram-бота @mromarket_bot, вы автоматически соглашаетесь
+      с данной политикой конфиденциальности и правилами сервиса.
+    </p>
+
+    <h2>1. Заморозка средств</h2>
+    <p>
+      Администрация сервиса имеет право заморозить средства пользователя
+      сроком до 2 суток для проверки активности, жалоб или подозрительных действий.
+    </p>
+
+    <h2>2. Вывод средств</h2>
+    <p>
+      Вывод средств может занимать до 7 рабочих дней с момента создания заявки.
+    </p>
+
+    <h2>3. Реферальная система</h2>
+    <p>
+      Пользователь получает 30% от дохода приглашённого реферала
+      с каждой его продажи.
+    </p>
+
+    <h2>4. Нарушение правил</h2>
+    <p>
+      В случае нарушения правил сервиса администрация имеет право:
+    </p>
+
+    <ul>
+      <li>Заблокировать аккаунт пользователя</li>
+      <li>Обнулить баланс</li>
+      <li>Обнулить репутацию</li>
+      <li>Ограничить доступ к сервису</li>
+    </ul>
+
+    <h2>5. Комиссия сервиса</h2>
+    <p>
+      Сервис имеет право удерживать комиссию в размере 6%
+      с продаж и внутренних операций.
+    </p>
+
+    <h2>6. Блокировка команды</h2>
+    <p>
+      В случае нарушения одним из участников команды,
+      администрация может ограничить доступ всей команде
+      сроком до 7 рабочих дней.
+    </p>
+
+    <h2>7. Автоматическая блокировка</h2>
+    <p>
+      Пользователь автоматически получает блокировку на 7 дней,
+      если систематически нарушает правила сервиса
+      и имеет репутацию 10 или ниже.
+    </p>
+
+    <h2>8. Согласие пользователя</h2>
+    <p>
+      Продолжая использовать сервис MRO Market,
+      пользователь подтверждает своё согласие
+      с данной политикой конфиденциальности.
+    </p>
+
+    <h2>9. Изменение правил</h2>
+    <p>
+      Администрация оставляет за собой право изменять правила
+      и условия использования сервиса без предварительного уведомления.
+    </p>
+
+    <div class="telegram">
+      <a href="https://t.me/mromarket_bot">
+        Перейти в Telegram-бота
+      </a>
     </div>
 
-    <h1>Примерные цены</h1>
-
-    <div class="subtitle">
-      Актуальные примерные цены на товары 👇
+    <div class="footer">
+      © 2026 MRO Market. Все права защищены.
     </div>
-
-    <div class="prices">
-
-      <div class="item">
-        <div class="game">Brawl Stars</div>
-        <div class="desc">Аккаунт ~10000 кубков</div>
-        <div class="price">150–200 ₽</div>
-      </div>
-
-      <div class="item">
-        <div class="game">Standoff 2</div>
-        <div class="desc">Аккаунт 15–20 уровень</div>
-        <div class="price">30–50 ₽</div>
-      </div>
-
-      <div class="item">
-        <div class="game">PUBG Mobile</div>
-        <div class="desc">Аккаунт 5 уровень</div>
-        <div class="price">15–20 ₽</div>
-      </div>
-
-      <div class="item">
-        <div class="game">Gmail</div>
-        <div class="desc">Почтовые аккаунты</div>
-        <div class="price">10–30 ₽</div>
-      </div>
-
-    </div>
-
-    <a
-      href="https://t.me/mromarket_bot?start=1"
-      class="btn"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Открыть бота
-    </a>
-
-    <footer>
-      @mromarket_bot
-    </footer>
 
   </div>
 
