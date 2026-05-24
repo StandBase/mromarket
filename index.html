@@ -1,158 +1,273 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MRO Market — Политика конфиденциальности</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #0f0f0f;
-      color: white;
-      font-family: Arial, sans-serif;
+<title>MRO Market</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#060606;
+    color:white;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:#00ff88;
+    filter:blur(180px);
+    opacity:0.08;
+    top:-200px;
+    right:-150px;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#00aaff;
+    filter:blur(180px);
+    opacity:0.07;
+    bottom:-200px;
+    left:-150px;
+    z-index:-1;
+}
+
+.container{
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card{
+    width:100%;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    padding:50px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 50px rgba(0,0,0,0.5);
+}
+
+.logo{
+    width:80px;
+    height:80px;
+    border-radius:24px;
+    background:linear-gradient(135deg,#00ff88,#00bfff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    font-weight:800;
+    margin-bottom:30px;
+    box-shadow:0 0 30px rgba(0,255,136,0.35);
+}
+
+h1{
+    font-size:55px;
+    font-weight:800;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    color:#b8b8b8;
+    font-size:18px;
+    line-height:1.7;
+    max-width:750px;
+    margin-bottom:35px;
+}
+
+.button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    background:linear-gradient(135deg,#00ff88,#00bfff);
+    color:black;
+    text-decoration:none;
+    font-weight:700;
+    padding:18px 35px;
+    border-radius:16px;
+    font-size:17px;
+    transition:0.25s;
+    box-shadow:0 10px 30px rgba(0,255,136,0.25);
+}
+
+.button:hover{
+    transform:translateY(-3px) scale(1.02);
+    box-shadow:0 15px 40px rgba(0,255,136,0.35);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    margin-top:50px;
+}
+
+.block{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.07);
+    border-radius:22px;
+    padding:28px;
+    transition:0.25s;
+}
+
+.block:hover{
+    transform:translateY(-5px);
+    border-color:rgba(0,255,136,0.3);
+}
+
+.block h2{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.block p{
+    color:#bdbdbd;
+    line-height:1.7;
+    font-size:15px;
+}
+
+.footer{
+    margin-top:60px;
+    text-align:center;
+    color:#6f6f6f;
+    font-size:14px;
+}
+
+@media(max-width:700px){
+
+    .card{
+        padding:30px;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 50px auto;
-      background: #181818;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    h1{
+        font-size:40px;
     }
 
-    h1 {
-      text-align: center;
-      color: #00ff88;
-      margin-bottom: 30px;
+    .subtitle{
+        font-size:16px;
     }
 
-    h2 {
-      color: #00ccff;
-      margin-top: 30px;
-    }
+}
 
-    p, li {
-      color: #dcdcdc;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      color: #888;
-      font-size: 14px;
-    }
-
-    .telegram {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .telegram a {
-      color: #00ff88;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .telegram a:hover {
-      text-decoration: underline;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container hero">
 
-    <h1>Политика конфиденциальности MRO Market</h1>
+    <div class="card">
 
-    <p>
-      Используя Telegram-бота @mromarket_bot, вы автоматически соглашаетесь
-      с данной политикой конфиденциальности и правилами сервиса.
-    </p>
+        <div class="logo">
+            M
+        </div>
 
-    <h2>1. Заморозка средств</h2>
-    <p>
-      Администрация сервиса имеет право заморозить средства пользователя
-      сроком до 2 суток для проверки активности, жалоб или подозрительных действий.
-    </p>
+        <h1>MRO Market</h1>
 
-    <h2>2. Вывод средств</h2>
-    <p>
-      Вывод средств может занимать до 7 рабочих дней с момента создания заявки.
-    </p>
+        <p class="subtitle">
+            Безопасный маркет Telegram-товаров с системой продаж,
+            репутацией, рефералами и защитой пользователей.
+            Используя сервис, вы автоматически соглашаетесь
+            с правилами платформы и политикой конфиденциальности.
+        </p>
 
-    <h2>3. Реферальная система</h2>
-    <p>
-      Пользователь получает 30% от дохода приглашённого реферала
-      с каждой его продажи.
-    </p>
+        <a class="button" href="https://t.me/mromarket_bot?start=5004616332" target="_blank">
+            Перейти в бота →
+        </a>
 
-    <h2>4. Нарушение правил</h2>
-    <p>
-      В случае нарушения правил сервиса администрация имеет право:
-    </p>
+        <div class="grid">
 
-    <ul>
-      <li>Заблокировать аккаунт пользователя</li>
-      <li>Обнулить баланс</li>
-      <li>Обнулить репутацию</li>
-      <li>Ограничить доступ к сервису</li>
-    </ul>
+            <div class="block">
+                <h2>Заморозка средств</h2>
+                <p>
+                    Администрация имеет право временно заморозить средства
+                    пользователя сроком до 2 суток
+                    для проверки активности или жалоб.
+                </p>
+            </div>
 
-    <h2>5. Комиссия сервиса</h2>
-    <p>
-      Сервис имеет право удерживать комиссию в размере 6%
-      с продаж и внутренних операций.
-    </p>
+            <div class="block">
+                <h2>Вывод средств</h2>
+                <p>
+                    Все заявки на вывод средств
+                    обрабатываются в течение
+                    до 7 рабочих дней.
+                </p>
+            </div>
 
-    <h2>6. Блокировка команды</h2>
-    <p>
-      В случае нарушения одним из участников команды,
-      администрация может ограничить доступ всей команде
-      сроком до 7 рабочих дней.
-    </p>
+            <div class="block">
+                <h2>Реферальная система</h2>
+                <p>
+                    Вы получаете 30% от дохода
+                    приглашённых пользователей
+                    с каждой их продажи.
+                </p>
+            </div>
 
-    <h2>7. Автоматическая блокировка</h2>
-    <p>
-      Пользователь автоматически получает блокировку на 7 дней,
-      если систематически нарушает правила сервиса
-      и имеет репутацию 10 или ниже.
-    </p>
+            <div class="block">
+                <h2>Нарушение правил</h2>
+                <p>
+                    При нарушении правил сервиса
+                    администрация может заблокировать аккаунт,
+                    обнулить баланс и репутацию.
+                </p>
+            </div>
 
-    <h2>8. Согласие пользователя</h2>
-    <p>
-      Продолжая использовать сервис MRO Market,
-      пользователь подтверждает своё согласие
-      с данной политикой конфиденциальности.
-    </p>
+            <div class="block">
+                <h2>Комиссия</h2>
+                <p>
+                    Сервис удерживает комиссию
+                    в размере 6%
+                    с внутренних операций и продаж.
+                </p>
+            </div>
 
-    <h2>9. Изменение правил</h2>
-    <p>
-      Администрация оставляет за собой право изменять правила
-      и условия использования сервиса без предварительного уведомления.
-    </p>
+            <div class="block">
+                <h2>Авто-блокировка</h2>
+                <p>
+                    Пользователи с репутацией 10 и ниже,
+                    которые регулярно нарушают правила,
+                    получают автоматическую блокировку на 7 дней.
+                </p>
+            </div>
 
-    <div class="telegram">
-      <a href="https://t.me/mromarket_bot">
-        Перейти в Telegram-бота
-      </a>
+        </div>
+
+        <div class="footer">
+            © 2026 MRO Market — Все права защищены
+        </div>
+
     </div>
 
-    <div class="footer">
-      © 2026 MRO Market. Все права защищены.
-    </div>
-
-  </div>
+</div>
 
 </body>
 </html>
